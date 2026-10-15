@@ -1,0 +1,21 @@
+@kind(blueprint)
+@blueprint(daily){
+  version: "1.0"
+  description: "Daily note template"
+}
+@meta{
+  id: ${uuid()}
+  title: ${title}
+  date: ${date("YYYY-MM-DD")}
+  tags: list("daily")
+}
+
+=[ 今日のタスク ]#(tasks)
+- ( ) タスク1
+- ( ) タスク2
+
+=[ メモ・ログ ]#(log)
+- 
+
+=[ 振り返り ]#(reflection)
+

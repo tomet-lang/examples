@@ -1,0 +1,8 @@
+[book]
+title = "App Documentation"
+lang = "ja"
+dest = "dist"
+
+[build]
+base = "/"
+kinds = ["*", "!config", "!index"]

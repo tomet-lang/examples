@@ -1,0 +1,19 @@
+@use(vault)
+@meta{
+  id: note-welcome
+  title: "Tomet Vault へようこそ"
+  tags: list("guide", "pkm")
+}
+
+=[ このVaultの構造 ]
+
+このリポジトリは、個人知識管理（PKM / メモ帳）としての Tomet Vault の推奨サンプルです。
+
+==[ 特徴 ]
+- **ルートがそのままノート空間**: `00-Inbox`, `10-Daily`, `30-Notes` など、自分の思考体系に合わせて自由にフォルダを作れます。
+- **システム定義の隠蔽**: 設定やブループリント、語彙定義は `.tomet/` ディレクトリの中に隠されています。エディタのツリーでノートを探すときに邪魔になりません。
+
+@vault.memo[
+  ブループリントを使って新しいノートを作成するには、CLI から以下を実行します：
+  `tomet new 10-Daily/2026-10-16.tmt --blueprint daily`
+]

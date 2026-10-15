@@ -1,0 +1,14 @@
+@kind(vocabulary)
+@vocabulary(api){
+  version: "1.0.0"
+}
+
+@element(endpoint){
+  display: block
+  @args{
+    @param(method){ type: string, positional: true, required: true }[ HTTP メソッド。`GET` / `POST` など。 ]
+    @param(path){ type: string, positional: true, required: true }[ API パス。 ]
+  }
+}[
+  API エンドポイント定義。
+]

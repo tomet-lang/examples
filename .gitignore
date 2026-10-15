@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Tomet cache
+.tomet/cache/
+pkm/.tomet/cache/
+app-dev/.tomet/cache/
+
+# tmtbook output
+app-dev/tmtroot/dist/

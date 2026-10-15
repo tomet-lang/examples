@@ -1,0 +1,15 @@
+@use(api)
+@meta{
+  id: spec-api
+  title: "API 仕様"
+}
+
+=[ 認証 API ]
+
+@api.endpoint(method: "POST", path: "/v1/auth/login")[
+  ユーザーログインエンドポイント。JWTトークンを発行する。
+]
+
+@api.endpoint(method: "GET", path: "/v1/users/me")[
+  ログイン中ユーザーのプロフィールを取得する。
+]

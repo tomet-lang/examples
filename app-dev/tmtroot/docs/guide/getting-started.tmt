@@ -1,0 +1,17 @@
+@meta{
+  id: guide-getting-started
+  title: "はじめに"
+}
+
+=[ セットアップ ]
+
+アプリケーションのローカル開発環境の構築手順です。
+
+==[ 前提条件 ]
+- Rust 1.85+
+- Tomet CLI
+
+==[ 起動方法 ]
+```bash
+cargo run
+```

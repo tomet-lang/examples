@@ -1,0 +1,20 @@
+@kind(config)
+@meta{ id: vault-config }
+@config{
+  meta: {
+    created: { type: datetime, format: rfc3339, offset: "+09:00" }
+    modified: { type: datetime, format: rfc3339, offset: "+09:00" }
+    tags: { type: list, always_newline: false }
+  }
+  format: {
+    meta: { always_newline: true }
+    heading: { space_inside_brackets: true }
+  }
+  blueprints: list(
+    ".tomet/blueprints/daily.blueprint.tmt",
+    ".tomet/blueprints/note.blueprint.tmt",
+  )
+  vocabularies: list(
+    ".tomet/vocabularies/vault.vocabulary.tmt",
+  )
+}

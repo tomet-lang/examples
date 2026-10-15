@@ -1,0 +1,21 @@
+@meta{
+  id: doc-index
+  title: "App Documentation Index"
+}
+
+=[ ドキュメント一覧 ]
+
+このリポジトリは、アプリケーション開発における Tomet の推奨構成サンプルです。
+
+==[ ガイド ]
+- @link[`docs/guide/getting-started.tmt`][はじめに]
+
+==[ 仕様 ]
+- @link[`docs/spec/api.tmt`][API 仕様]
+
+==[ 内部開発 ]
+- @link[`dev/roadmap.tmt`][開発ロードマップ]
+
+==[ スキーマ ]
+- @link[`schema/vocabularies/api.vocabulary.tmt`][API 語彙定義]
+- @link[`schema/blueprints/rfc.blueprint.tmt`][RFC 雛形]

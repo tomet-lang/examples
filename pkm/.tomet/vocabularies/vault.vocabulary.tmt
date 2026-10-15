@@ -1,0 +1,10 @@
+@kind(vocabulary)
+@vocabulary(vault){
+  version: "1.0.0"
+}
+
+@element(memo){
+  display: block
+}[
+  Vault内のちょっとしたメモや気づき。
+]

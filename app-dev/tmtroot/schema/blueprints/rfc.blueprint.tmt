@@ -1,0 +1,20 @@
+@kind(blueprint)
+@blueprint(rfc){
+  version: "1.0"
+  description: "Request for Comments (RFC) template"
+}
+@meta{
+  id: ${uuid()}
+  title: ${title}
+  status: "draft"
+  created: ${date("YYYY-MM-DD")}
+}
+
+=[ 要約 ]
+
+=[ 動機・背景 ]
+
+=[ 詳細設計 ]
+
+=[ デメリット・代替案 ]
+

@@ -1,0 +1,19 @@
+@kind(config)
+@meta{ id: app-config }
+@config{
+  meta: {
+    created: { type: datetime, format: rfc3339, offset: "+09:00" }
+    modified: { type: datetime, format: rfc3339, offset: "+09:00" }
+    status: { type: string }
+  }
+  format: {
+    meta: { always_newline: true }
+    heading: { space_inside_brackets: true }
+  }
+  blueprints: list(
+    "tmtroot/schema/blueprints/rfc.blueprint.tmt",
+  )
+  vocabularies: list(
+    "tmtroot/schema/vocabularies/api.vocabulary.tmt",
+  )
+}

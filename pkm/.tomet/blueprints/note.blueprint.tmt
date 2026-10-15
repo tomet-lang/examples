@@ -1,0 +1,17 @@
+@kind(blueprint)
+@blueprint(note){
+  version: "1.0"
+  description: "Standard note template"
+}
+@meta{
+  id: ${uuid()}
+  title: ${title}
+  tags: list()
+}
+
+=[ 概要 ]
+
+=[ 詳細 ]
+
+=[ 関連リンク ]
+
