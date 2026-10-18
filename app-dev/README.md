@@ -11,7 +11,7 @@ app-dev/
 │   └── main.rs
 ├── Cargo.toml                  # （例：Rustの場合）
 └── tmtroot/                    # ドキュメント・仕様書のルート
-    ├── tmtbook.toml            # tmtbook（静的サイト生成）設定
+    ├── shelf.toml            # tomet-shelf（静的サイト生成）設定
     ├── .index.tmt              # トップページ・目次
     ├── docs/                   # ユーザー向け・仕様ドキュメント
     │   ├── spec/api.tmt
@@ -28,7 +28,7 @@ app-dev/
 アプリ開発やチーム開発において、語彙（`vocabulary`）やテンプレート（`blueprint`）は**「チーム全員で共有・拡張していくプロジェクトの共通仕様」**です。
 
 - **可視化**: 隠しフォルダではなく `schema/` に堂々と置くことで、新しいAPI定義要素やドキュメント雛形を追加しやすくします。
-- **`tmtbook` との統合**: `tmtroot/` 直下に置くことで、`tmtbook build` を実行した際に「API語彙一覧」や「RFCテンプレート仕様」がそのままドキュメントサイトに自動レンダリングされます。
+- **`tomet-shelf` との統合**: `tmtroot/` 直下に置くことで、`tomet-shelf build` を実行した際に「API語彙一覧」や「RFCテンプレート仕様」がそのままドキュメントサイトに自動レンダリングされます。
 
 ## 使い方
 
@@ -42,9 +42,9 @@ tomet check .
 tomet new tmtroot/dev/rfc-001.tmt --blueprint rfc
 ```
 
-### 3. ドキュメントサイトをビルドする（tmtbook）
+### 3. ドキュメントサイトをビルドする（tomet-shelf）
 ```bash
-tmtbook build tmtroot/
+tomet-shelf build tmtroot/
 # またはローカルサーバー起動
-tmtbook serve tmtroot/
+tomet-shelf serve tmtroot/
 ```

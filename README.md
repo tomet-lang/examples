@@ -45,7 +45,7 @@ app-dev/
 ├── default.config.tmt      # プロジェクト設定（schema/ 配下を指定）
 ├── src/                    # アプリケーションのコード
 └── tmtroot/                # ドキュメント空間のルート
-    ├── tmtbook.toml        # tmtbook（Webサイト生成）設定
+    ├── shelf.toml        # tomet-shelf（Webサイト生成）設定
     ├── .index.tmt          # トップページ・索引
     ├── docs/               # ユーザー向け仕様・ガイド
     ├── dev/                # 開発者専用メモ・ロードマップ
@@ -55,7 +55,7 @@ app-dev/
 ```
 
 - **なぜこの構成か？**:
-  アプリ開発では、語彙（`vocabulary`）や設計書雛形（`blueprint`）もチーム全員で育てていく大事な仕様です。隠さず `tmtroot/schema/` に堂々と配置し、`tmtbook` でそのままAPI仕様書・語彙リファレンスとしてWebサイト化できます。
+  アプリ開発では、語彙（`vocabulary`）や設計書雛形（`blueprint`）もチーム全員で育てていく大事な仕様です。隠さず `tmtroot/schema/` に堂々と配置し、`tomet-shelf` でそのままAPI仕様書・語彙リファレンスとしてWebサイト化できます。
 
 ---
 
@@ -79,7 +79,7 @@ cd app-dev && tomet check .
 
 ### ドキュメントサイトのビルド（app-dev）
 ```bash
-cd app-dev && tmtbook build tmtroot/
+cd app-dev && tomet-shelf build tmtroot/
 # プレビューサーバー起動
-cd app-dev && tmtbook serve tmtroot/
+cd app-dev && tomet-shelf serve tmtroot/
 ```

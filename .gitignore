@@ -7,5 +7,5 @@ Thumbs.db
 pkm/.tomet/cache/
 app-dev/.tomet/cache/
 
-# tmtbook output
+# tomet-shelf output
 app-dev/tmtroot/dist/
