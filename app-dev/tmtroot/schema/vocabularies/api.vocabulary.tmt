@@ -1,14 +1,25 @@
-@kind(vocabulary)
-@vocabulary(api){
+::kind(vocabulary)
+::vocabulary(api){
   version: "1.0.0"
 }
 
-@element(endpoint){
-  display: block
-  @args{
-    @param(method){ type: string, positional: true, required: true }[ HTTP メソッド。`GET` / `POST` など。 ]
-    @param(path){ type: string, positional: true, required: true }[ API パス。 ]
+::elements{
+  endpoint: {
+    display: block
+    about: | API エンドポイント定義。
+    args: {
+      method: {
+        type: string
+        positional: true
+        required: true
+        about: | HTTP メソッド。`GET` / `POST` など。
+      }
+      path: {
+        type: string
+        positional: true
+        required: true
+        about: | API パス。
+      }
+    }
   }
-}[
-  API エンドポイント定義。
-]
+}

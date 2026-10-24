@@ -1,5 +1,5 @@
-@use(vault)
-@meta{
+::use(vault)
+::meta{
   id: note-welcome
   title: "Tomet Vault へようこそ"
   tags: list("guide", "pkm")

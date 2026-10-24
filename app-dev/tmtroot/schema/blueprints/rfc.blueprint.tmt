@@ -1,9 +1,9 @@
-@kind(blueprint)
-@blueprint(rfc){
+::kind(blueprint)
+::blueprint(rfc){
   version: "1.0"
   description: "Request for Comments (RFC) template"
 }
-@meta{
+::meta{
   id: ${uuid()}
   title: ${title}
   status: "draft"
@@ -17,4 +17,3 @@
 =[ 詳細設計 ]
 
 =[ デメリット・代替案 ]
-

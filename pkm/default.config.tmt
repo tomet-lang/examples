@@ -1,6 +1,6 @@
-@kind(config)
-@meta{ id: vault-config }
-@config{
+::kind(config)
+::meta{ id: vault-config }
+::config{
   meta: {
     created: { type: datetime, format: rfc3339, offset: "+09:00" }
     modified: { type: datetime, format: rfc3339, offset: "+09:00" }

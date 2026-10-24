@@ -1,9 +1,9 @@
-@kind(blueprint)
-@blueprint(note){
+::kind(blueprint)
+::blueprint(note){
   version: "1.0"
   description: "Standard note template"
 }
-@meta{
+::meta{
   id: ${uuid()}
   title: ${title}
   tags: list()
@@ -14,4 +14,3 @@
 =[ 詳細 ]
 
 =[ 関連リンク ]
-
